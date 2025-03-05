@@ -11,7 +11,7 @@ const Stripe = require("stripe");
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.send("server is running");
 });
 
 // app.post("/pay", async (req, res) => {
